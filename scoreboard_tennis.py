@@ -56,7 +56,7 @@ def score(s: str):
 
 s = input()
 print('player: A B')
-scoreboard = score(replace(s, getPlayers(s)))
+scoreboard = score(s)
 print('sets:', ' '.join(str(i) for i in list(scoreboard[2].values())))
 print('games:', ' '.join(str(i) for i in list(scoreboard[1].values())))
 print('score:', ' '.join(str(i) for i in scoreboard[0]))
